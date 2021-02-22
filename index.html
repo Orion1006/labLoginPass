@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Логин-пароль</title>
+  </head>
+  <body>
+    <div class="loginPassBox">
+      <form id="loginPass" action="https://httpbin.org/post" method="post">
+        <div class="loginBox">
+          <label for="login">логин:</label>
+          <input id="login" name="login" type="text" value="" />
+        </div>
+        <div class="passBox">
+          <label for="password">пароль:</label>
+          <input id="password" name="password" type="password" value="" />
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" id="check" name="check" value="" />
+          <label for="check">запомнить меня</label>
+        </div>
+      </form>
+    </div>
+    <button type="submit" form="loginPass">отправить</button>
+  </body>
+</html>
